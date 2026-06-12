@@ -1,0 +1,69 @@
+¿En qué consiste el juego?
+    Juego 2D de 1 jugador en el que debemos clicar las pelotas
+        antes de que caigan y obtener la máxima puntuación
+¿Cuántos objetos identificas? (Sólo identificar)
+    Cursor
+    Gameplay
+        Pelotas (Alien)
+        Plataformas (Ramp)
+        Pinchos (Spikes)
+        Fondo
+    HUD
+        Puntuación actual (Score)
+        Puntuación máxima (Highscore)
+    Menú
+        Botón Play
+        Botón Quit
+    Audios
+        Clicar el fondo (Missclick)
+        Clicar la pelota (Alien)
+        Colisión con plataforma (Ramp)
+        GameOver
+        Música de fondo
+    VFX
+        Partícula destrucción de Pelota (Alien)
+
+    Game Flow:
+        Menú -> Gameplay (botón Play)
+        Gameplay -> Menú (GameOver)
+    ¿Qué objetos son puramente estéticos?
+        Fondo
+        Música de fondo
+    ¿Qué objetos tienen comportamiento? ¿Qué comportamientos identificas?
+        Pelotas (Alien)
+            Deben detectar el click
+            Se crean en posiciones aleatorias en la parte superior de la pantalla
+                ¿Cada cuánto?
+            Al destruirse
+                emiten partículas
+                generan un audio
+                Aumenta la puntuación
+            Diferentes tipos
+                Caen
+                    Con gravedad
+                    Puntos
+                Flotan
+                    Puntos
+        Plataformas (Ramp)
+            Chocan con las pelotas (Alien)
+                Emiten un audio de choque
+            Algunas se mueven con el peso
+            Animación de inicio de juego (caen)
+        Pinchos (Spikes)
+            Colisión con pelota (Alien)
+                Lanza evento GameOver
+    ¿Qué elementos tiene el Canvas?
+        HUD
+            Score
+                Aumenta al clicar la pelota (Alien)
+                Inicia en 0
+            Highscore
+                Se actualiza en el GameOver
+                Son datos persistentes (guarda el dato de la sesión)
+        Menú
+            Play
+                Iniciar el Juego
+            Quit
+                Cerrar la aplicación
+
+¿Quién tiene la responsabilidad de esos comportamientos?
