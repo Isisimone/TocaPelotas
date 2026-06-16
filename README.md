@@ -94,3 +94,6 @@ Juego 2D desarrollado en Unity donde debemos clicar las pelotas antes de que cai
 - ✔ Sistema de audio implementado
 - ✔ Efectos visuales implementados
 - ✔ Completo funcionalmente para un jugador
+
+- <img width="645" height="364" alt="Captura de pantalla 2026-06-16 115700" src="https://github.com/user-attachments/assets/39afd28d-943a-4167-ac0f-e9dc72c63c1a" />
+
